@@ -1,0 +1,660 @@
+/*========共通項============*/
+li{
+    list-style:none
+}
+
+
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+*,*:after,*:before{
+    word-break:break-all;
+    box-sizing:border-box;
+}
+
+.under-line{
+    display:block;
+    margin:0 auto;
+    margin-top:2%;
+    margin-bottom:5%;
+    border-bottom:10px solid orange;
+    width:50px;
+}
+
+
+
+
+table{
+    border-collapse:separate;
+}
+
+thead{
+    border-radius:10px 10px 0 0;
+}
+
+tfoot{
+    border-bottom-style:none;
+    border-radius:0 0 10px 10px;
+}
+
+/*background-color:#fcfaf5; クリーム色の背景
+　background-color:#f79314;オレンジ色の背景
+*/
+
+/*========hover============*/
+
+a:hover {
+    opacity:0.7;
+    transition: .2;
+}
+
+/*=========header===========*/
+
+
+.header-wrap{
+    display:flex;
+    align-items:center;
+    margin:0 20% 0 20%;
+    width:70%;
+    z-index:10;
+}
+
+.header-void{
+    display:none;
+    height:100px;
+    width:100%;
+    background-color:white;
+}
+
+/*header-logo*/
+.header-logo{
+    display:inline-block;
+    padding-bottom:20px;
+    width:20%;
+}
+/*====================*/
+
+/*header-list*/
+.header-list-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    float:left;
+    width:60%;
+    height:50px;
+}
+
+.header-list-items-outline{
+    display:inline-block;
+    width:80px;
+    font-size:12px;
+}
+
+.header-list-items{
+    display:block;
+    text-align:center;
+}
+
+.header-list-items span:last-child{
+    font-size:10px;
+}
+
+.menu-icon{
+    display:none;
+}
+/*======header-list===============*/
+
+.btn-freecouncel {
+    display:inline-block;
+    padding:0 20px 0 20px;
+    text-align:center;
+    line-height:40px;
+    border-radius:20px;
+    height:40px;
+    background-color:orange;
+    color:white;
+    font-size:10px;
+}
+
+/*======header終わり==============*/
+
+/*======トップ下オレンジの背景帯*/
+.background-cover{
+    display:none;
+}
+
+.background-img-1{
+    position:relative;
+    background-image:url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-pc.png");
+    height:30%;
+    text-align:left;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.header-text-1{
+    position:absolute;
+    top:10%;
+    left:25%;
+    color:white;
+    font-size:40px;
+    line-height:150px;
+}
+
+/*==========POTEPAN CAMPについて===========*/
+
+.about-potepan-section{
+    padding-top:100px;
+    margin-bottom:100px;
+    padding-bottom:100px;
+    background-color:#fcfaf5;
+    height:auto;
+    text-align:center;
+}
+
+.about-potepan-h1{
+    display:block;
+    margin:0 auto;
+    font-size:50px;
+    width:60%;
+}
+
+.about-potepan-text-wrap{
+    margin:0 auto;
+    width:80%;
+    text-align:center;
+}
+
+.about-potepan-text-detail{
+    line-height:30px;
+}
+
+.about-potepan-forwhom{
+    line-height:30px;
+}
+
+.about-potepan-forwhom br{
+    display:none;    
+}
+.under-line-mark{
+    background:linear-gradient(transparent 50%, yellow);
+}
+
+/*======全コースの共通ポイント========*/
+
+.all-course-wrap{
+    position:relative;
+    margin:100px auto 50px auto;
+    padding-top:50px;
+    border-radius:20px;
+    width:80%;
+    background-color:white;
+}
+
+.all-course-wrap-common{
+    font-size:30px;
+}
+
+
+.top-circle{
+    position:absolute;
+    top:-40px;
+    left:47%;
+    width:70px;
+    height:70px;
+    border-radius:35px;
+    background-color:white;
+}
+
+.potepan-favo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+    height:30px;
+    width:30px;
+}
+
+.all-course-point-container{
+    display:flex;
+}
+
+.course-point{
+}
+
+.apeal-point-top{
+    border-radius:10px;
+    margin:20px auto 20px auto;
+    padding:0 20px 0 20px;
+    width:80%;
+    background-color:black;
+    color:white;
+}
+
+.apeal-point-bottom{
+    
+}
+
+.apeal-point-bottom:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-finger.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+}
+
+.course-point-img{
+    width:80%;
+    height:200px;
+}
+
+
+/*２つの表をまとめるエリア*/
+.top-tables-wrap{
+    display:flex;
+    justify-content:center;
+    height:500px;
+    margin-bottom:50px;
+}
+
+
+/*====Webアプリケーションコース=======*/
+.top-row th {
+    border-radius:10px 10px 0 0;
+}
+
+.web-app-course{
+    height:500px;
+    width:30%;
+    margin-right:3%;
+}
+
+
+/*====Railsキャリアコース=======*/
+
+.rails-career-course{
+    height:500px;
+    width:30%;
+
+}
+
+
+/*=================コースプランのセクション======================*/
+
+
+
+/*=====コースプラン===============*/
+
+.course-plan-head{
+    text-align:center;
+    margin:0 auto;
+    font-size:30px;
+    width:20%;
+}
+
+/*=====Webアプリケーションコース===============*/
+.web-app-course-wrap{
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:50px 0 50px 0;
+    text-align:center;
+    border-radius:10px;
+    width:90%;
+    background-color:#fcfaf5;
+}
+
+.course-plan-selection h1{
+    margin:0 auto;
+    width:10%;
+    
+}
+
+.web-app-course-wrapper{
+    text-align:center;
+}
+
+/*おすすめポイント〜*/
+.web-app-course-container{
+    text-align:left;
+    margin:0 auto;
+    width:90%;
+    border-radius:10px;
+    background-color:white;
+}
+
+.web-app-course-container li:before{
+    content:"・";
+    color:orange;
+    font-size:20px;
+    font-weight:bold;
+}
+/*コース概要〜*/
+
+.course-detail-wrap{
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:30px;
+    width:90%;
+    border-radius:10px;
+    background-color:white;
+}
+
+.course-detail-wrap p{
+    margin-left:20px;
+}
+.course-plan-point{
+    font-size:20px;    
+}
+
+.course-plan-point:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/heading-icon.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+}
+
+.details{
+    width:150px;
+    height:30px;
+    border-radius:15px;
+    background-color:#fcfaf5;
+}
+
+.content:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-pencil.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+    }
+
+.period:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-calender.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+
+}
+
+.application:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-condition.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+
+}
+
+.fee-class:before{
+    content:'';
+    display:inline-block;
+    margin-right:5px;
+    width:20px;
+    height:20px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-coin.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+
+}
+
+/*各学習内容*/
+
+.what-to-learn-wrap{
+    margin:0 auto;
+    margin-bottom:50px;
+    border-radius:10px;
+    width:90%;
+    background-color:white;
+}
+
+.what-to-learn-head{
+    text-align:left;
+    display:block;
+    padding-top:30px;
+    margin-left:2%;
+}
+
+.what-to-learn-head:before{
+    display:inline-block;
+    content:'';
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/heading-icon.png);    
+    background-size:contain;
+    width:20px;
+    height:20px;
+}
+
+.content-container{
+    display:inline-block;
+    margin-left:10px;
+    vertical-align:top;
+    width:45%;
+    height:50%;
+    text-align:left;
+    overflow:hidden;
+}
+
+.img-container{
+    display:flex;
+    justify-content:center;
+}
+
+.img-container img{
+    width:120%;
+}
+
+/*Railsキャリアの費用圧縮*/
+.course-fee-reduction{
+    display:flex;
+    justify-content:left;
+    margin:0 auto;
+    width:90%;
+    background-color:white;
+    
+}
+
+.course-fee-reduction-img{
+    display:inline-block;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.course-fee-reduction-txt{
+    text-align:left;
+    display:inline-block;
+    width:80%;
+}
+
+.text-emohasized{
+    display:block;    
+}
+
+
+/*=========受講生の声=========*/
+
+.interview-wrap{
+    padding:100px 0 100px 0;
+    background-color:#f5f5f5;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
+.interview-wrap h1{
+    margin:0 auto;
+    text-align:center;
+    width:20%;
+}
+
+.interview-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.interview-container{
+    display:inline-block;
+    position:relative;
+    margin-right:10px;
+    width:30%;
+    
+}
+
+.interview-container:hover{
+    color:orange;
+}
+
+.interview-container:hover .interview-img{
+    transform:scale(1.1);
+    transition-duration:0.7s;
+}
+
+.interview-container a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.interview-txt:hover{
+    color:orange;    
+}
+
+.image-container{
+    margin:0 auto;
+    border-radius:10px;
+    overflow:hidden;
+    width:90%;
+    height:200px;
+}
+
+.image-container img{
+    width:100%;
+}
+
+
+
+/*フッター*/
+
+footer{
+    background-color:orange;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.seventh-txt-top-wrap h1{
+    font-size:40px;    
+}
+
+/*左側の列です*/
+.footer-left-column{
+     display:inline-block;
+     vertical-align:top;
+     margin-left:150px;
+     width:20%;
+     color:white;
+}
+
+.footer-img-logo{
+    width:230;
+    height:30px;
+}
+
+.footer-img-wrap{
+    width:180px;
+    text-align:center;
+}
+
+.footer-img-wrap img{
+    width:50px;
+    height:50px;
+}
+
+/*Facebookアイコン*/
+.facebook{
+    display:inline-block;
+    position:relative;
+    margin-right:10px;
+}
+
+.facebook a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.facebook:hover{
+    opacity:0.8;
+}
+
+/*Twitterアイコン*/
+
+.twitter{
+    position:relative;
+    display:inline-block;
+}
+
+.twitter a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+}
+
+.twitter:hover{
+    opacity:0.8;
+}
+
+/*右側の列です*/
+
+
+.footer-right-column{
+    display:inline-block;
+    margin-left:200px;
+    text-align:left;
+    color:white;
+    line-height:50px;
+}
+
+.footer-right-column a{
+    display:block;
+    color:white;
+}
+
+.footer-img-icon{
+    margin-left:250px;
+    width:120px;
+    height:70px;
+}
